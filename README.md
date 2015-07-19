@@ -36,7 +36,7 @@ or can be run in isolation with `cap production nginx:reload`
 Configurable options:
 
 ```ruby
-set :nginx_base_command, 'service nginx' # default
+set :nginx_reload_command, '/etc/init.d/nginx reload' # default
 set :nginx_roles, :all # default
 ```
 
