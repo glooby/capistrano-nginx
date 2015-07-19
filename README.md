@@ -1,4 +1,4 @@
-# Capistrano::Nginx
+# Capistrano::nginx
 
 capistrano-nginx support for Capistrano 3.x
 
