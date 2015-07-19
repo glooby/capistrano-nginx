@@ -27,7 +27,7 @@ Require in Capfile to use the default task:
 require 'capistrano/nginx'
 ```
 
-The task will run after `deploy:updated` as part of Capistrano's default deploy,
+The task will run after `deploy:published` as part of Capistrano's default deploy,
 or can be run in isolation with `cap production nginx:reload`
 
 Configurable options:
