@@ -24,7 +24,7 @@ Or install it yourself as:
 Require in Capfile to use the default task:
 
 ```ruby
-require 'capistrano/npm'
+require 'capistrano/nginx'
 ```
 
 require 'glooby/capistrano-nginx'
