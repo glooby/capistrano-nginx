@@ -6,7 +6,7 @@ namespace :nginx do
     end
   end
 
-  before 'deploy:updated', 'nginx:reload'
+  after 'deploy:updated', 'nginx:reload'
 end
 
 namespace :load do

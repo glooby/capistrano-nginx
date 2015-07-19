@@ -27,10 +27,7 @@ Require in Capfile to use the default task:
 require 'capistrano/nginx'
 ```
 
-require 'glooby/capistrano-nginx'
-The task will run before deploy:updated as part of Capistrano's default deploy, or can be run in isolation with cap production nginx:reload
-
-The task will run before `deploy:updated` as part of Capistrano's default deploy,
+The task will run after `deploy:updated` as part of Capistrano's default deploy,
 or can be run in isolation with `cap production nginx:reload`
 
 Configurable options:
@@ -41,8 +38,6 @@ set :nginx_roles, :all # default
 ```
 
 ## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
