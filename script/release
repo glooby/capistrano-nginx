@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git remote add fury https://kilhage@git.fury.io/glooby/capistrano-nginx.git
+
+git push fury master
