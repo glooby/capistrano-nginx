@@ -1,6 +1,8 @@
 # Capistrano::nginx
 
-capistrano-nginx support for Capistrano 3.x
+nginx support for Capistrano 3.x
+
+Makes it possible to reload/restart nginx during deploy
 
 ## Installation
 
@@ -27,14 +29,22 @@ Require in Capfile to use the default task:
 require 'capistrano/nginx'
 ```
 
-The task will run after `deploy:published` as part of Capistrano's default deploy,
-or can be run in isolation with `cap production nginx:reload`
+Configure in deploy.rb to execute one of the tasks:
+
+```ruby
+after 'deploy:published', 'nginx:reload'
+after 'deploy:published', 'nginx:restart'
+```
+
+You can also run it in isolation: `cap production nginx:reload` or `cap production nginx:restart`
 
 Configurable options:
 
 ```ruby
-set :nginx_reload_command, '/etc/init.d/nginx reload' # default
-set :nginx_roles, :all # default
+set :nginx_reload_roles, :all
+set :nginx_reload_command, '/etc/init.d/nginx reload'
+set :nginx_restart_roles, :all
+set :nginx_restart_command, '/etc/init.d/nginx restart'
 ```
 
 ## Development
