@@ -1,5 +1,7 @@
 # Capistrano::nginx
 
+[![Gem Version](https://badge.fury.io/rb/capistrano-php-fpm.svg)](https://badge.fury.io/rb/capistrano-php-fpm)
+
 nginx support for Capistrano 3.x
 
 Makes it possible to reload/restart nginx during deploy
