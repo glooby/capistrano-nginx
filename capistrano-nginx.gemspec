@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano-nginx"
-  spec.version       = '1.0.1'
+  spec.version       = '1.0.2'
   spec.authors       = ["Emil Kilhage"]
   spec.email         = ["emil.kilhage@glooby.com"]
 
   spec.summary       = %q{nginx support for Capistrano 3.x}
   spec.description   = %q{nginx support for Capistrano 3.x}
-  spec.homepage      = "https://github.com/glooby/capistrano-nginx"
+  spec.homepage      = "https://www.glooby.se"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
